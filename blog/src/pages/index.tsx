@@ -1,17 +1,85 @@
 import React, { type FC } from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
+import { Button } from "../ui/button";
 
 const IndexPage: FC<PageProps> = () => {
   return (
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
-        <main onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}>
-          <h1 className="text-3xl top-5 font-bold underline">Hello!</h1>
-          <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
-            Badge
-          </span>
-        </main>
+        <div className="grid grid-rows-4 grid-flow-col gap-4">
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={1}
+            importance={3}
+          >
+            Click me
+          </Button>
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={1}
+          >
+            Click me
+          </Button>
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={2}
+          >
+            Click me
+          </Button>
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={3}
+          >
+            Click me
+          </Button>
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={3}
+            icon={
+              <path d="M7 11H17V13H7V11ZM4 7H20V9H4V7ZM10 15H14V17H10V15Z" />
+            }
+          >
+            Click me
+          </Button>
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={3}
+            importance={2}
+            icon={
+              <path d="M7 11H17V13H7V11ZM4 7H20V9H4V7ZM10 15H14V17H10V15Z" />
+            }
+          >
+            Click me
+          </Button>
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={3}
+            rounded
+            icon={
+              <path d="M7 11H17V13H7V11ZM4 7H20V9H4V7ZM10 15H14V17H10V15Z" />
+            }
+          />
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={3}
+            rounded
+            importance={2}
+            icon={
+              <path d="M7 11H17V13H7V11ZM4 7H20V9H4V7ZM10 15H14V17H10V15Z" />
+            }
+          />
+          <Button
+            onClick={() => toggleTheme(theme === "dark" ? "light" : "dark")}
+            size={3}
+            reversed
+            icon={
+              <path d="M7 11H17V13H7V11ZM4 7H20V9H4V7ZM10 15H14V17H10V15Z" />
+            }
+          >
+            Click me
+          </Button>
+        </div>
       )}
     </ThemeToggler>
   );

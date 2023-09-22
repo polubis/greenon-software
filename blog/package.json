@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
+    "classnames": "^2.3.2",
     "gatsby": "^5.12.4",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-google-analytics": "^5.12.0",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
@@ -25,7 +27,6 @@
     "gatsby-plugin-sitemap": "^6.12.0",
     "gatsby-source-filesystem": "^5.12.0",
     "gatsby-transformer-sharp": "^5.12.0",
-    "gatsby-plugin-dark-mode": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
