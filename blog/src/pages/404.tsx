@@ -1,7 +1,7 @@
-import React, { type FC } from "react";
-import { HeadFC, PageProps } from "gatsby";
+import React from 'react';
+import { HeadFC, PageProps } from 'gatsby';
 
-const NotFoundPage: FC<PageProps> = () => {
+const NotFoundPage: React.FC<PageProps> = () => {
   return <main>Not found...</main>;
 };
 

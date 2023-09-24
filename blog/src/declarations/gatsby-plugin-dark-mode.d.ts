@@ -1,7 +1,7 @@
-import type { FC, ReactNode } from "react";
+import type { FC, ReactNode } from 'react';
 
-declare module "gatsby-plugin-dark-mode" {
-  export type Theme = "light" | "dark";
+declare module 'gatsby-plugin-dark-mode' {
+  export type Theme = 'light' | 'dark';
 
   export interface ThemeTogglerChildrenProps {
     theme: Theme;
