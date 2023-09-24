@@ -2,12 +2,20 @@
 
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "Runnig linting and fix..."
+echo "Changing directory to 'blog'..."
 
 cd blog
 
+echo "Checking commit convention..."
+
+npm run commit:check
+
+echo "Typechecking..."
+
 npm run typecheck
-npm run commitmsg
+
+echo "Runnig linting and fix..."
+
 npm run lint:fix
 
 git add .
