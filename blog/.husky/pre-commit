@@ -6,6 +6,8 @@ echo "Runnig linting and fix..."
 
 cd blog
 
+npm run typecheck
+npm run commitmsg
 npm run lint:fix
 
 git add .
